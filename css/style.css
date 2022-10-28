@@ -179,9 +179,15 @@ nav #check, nav label{
 
 .top a {
     padding: 10px 15px;
+    transition: all 0.4s ease-in-out;
 }
 
 .top a .fa-angle-up {
     font-size: 40px;
     font-weight: bold;
+}
+
+.top a:hover {
+    color: var(--sub);
+    background-color: var(--main);
 }
