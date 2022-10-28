@@ -13,6 +13,7 @@
     --main: rgb(34, 34, 34);
     --sub: rgb(100, 149, 237);
     --font: rgb(255, 255, 255);
+    --low-font: rgb(187, 187, 187);
     --border: rgb(45, 45, 45);
     --about: rgb(248, 248, 248);
     --footer: rgb(20, 20, 20);
@@ -94,7 +95,7 @@ nav #check, nav label{
     display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     nav {
         flex-direction: column;
         width: 100%;
@@ -175,10 +176,13 @@ nav #check, nav label{
     justify-content: center;
     align-items: center;
     z-index: 999;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
 }
 
 .top a {
     padding: 10px 15px;
+    color: var(--font);
     transition: all 0.4s ease-in-out;
 }
 

@@ -1,0 +1,81 @@
+.page1 {
+  background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.7)),
+    url(/images/home-horizontal.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.page1 .container {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 40px;
+  position: absolute;
+  bottom: 20vh;
+}
+
+.page1 .container .title {
+  color: var(--font);
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.page1 .container .content {
+  text-align: center;
+  line-height: 30px;
+  color: var(--low-font);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.page1 .container .button {
+  font-size: 17px;
+  letter-spacing: 1px;
+  color: var(--font);
+  background-color: var(--sub);
+  padding: 14px 30px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  color: var(--font);
+  cursor: pointer;
+  transition: all 0.2s linear;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.page1 .container .button:hover {
+    background-color: var(--main);
+    color: var(--sub);
+}
+
+@media screen and (max-width: 1000px) {
+  .page1 .container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .page1 {
+    background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.7)),
+      url(/images/home-vertical.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .page1 .container .title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page1 .container {
+    width: 85%;
+  }
+}
