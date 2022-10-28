@@ -1,7 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    text-decoration: none;   
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: rgb(255, 255, 255);
+    --main: rgb(34, 34, 34);
+    --sub: rgb(243, 30, 30);
+    --font: rgb(255, 255, 255);
+    --border: rgb(45, 45, 45);
+    --about: rgb(248, 248, 248);
+    --footer: rgb(20, 20, 20);
+    --link: rgb(255, 0, 186);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* header */
+nav {
+    height: 70px;
+    width: 100%;
+    background-color: var(--main);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+}
+
+/* LOGO */
+nav .logo {
+    background-color: var(--sub);
+    /* width: 130px;
+    height: 60%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav .logo a {
+    color: var(--font);
+    padding: 8px 22px;
+}
+
+/* nav ul */
+
+nav ul {
+    display: flex;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 22px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: var(--font);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+nav ul li:hover a {
+    color: var(--sub);
+}
+
+nav #check, nav label{
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+    }
+
+    nav .logo {
+        text-align: center;
+        margin: 0px 0px 0px 20px;
+    }
+
+    nav ul {
+        height: 100vh;
+        width: 30%;
+        flex-direction: column;
+        background-color: var(--main);
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        line-height: 50px;
+        padding-top: 40px;
+        text-align: center;
+        transition: all 0.6s linear;
+        z-index: -999;
+    }
+
+    nav ul li {
+        border-bottom: 2px solid var(--border);
+        justify-content: flex-start;
+    }
+
+    nav label {
+        display: block;
+        font-size: 30px;
+        color: var(--font);
+        position: absolute;
+        right: 20px;
+        height: 100%;
+        line-height: 70px;
+        cursor: pointer;
+    }
+
+    nav #check:checked~ul {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        width: 40%;
+    }
 }
