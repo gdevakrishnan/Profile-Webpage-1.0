@@ -27,6 +27,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Montserrat Alternates', sans-serif;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -38,6 +39,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     z-index: 999;
+    position: fixed;
+    top: 0;
 }
 
 /* LOGO */
@@ -146,3 +149,17 @@ nav #check, nav label{
         width: 40%;
     }
 }
+
+/* Header is Completed */
+
+/* Pages Styling */
+.page {
+    width: 100%;
+    height: 100vh;
+}
+
+.page1 {background-color: red;}
+.page2 {background-color: blue;}
+.page3 {background-color: green;}
+.page4 {background-color: yellow;}
+.page5 {background-color: coral;}
