@@ -11,7 +11,7 @@
 :root {
     --bg-color: rgb(255, 255, 255);
     --main: rgb(34, 34, 34);
-    --sub: rgb(243, 30, 30);
+    --sub: rgb(100, 149, 237);
     --font: rgb(255, 255, 255);
     --border: rgb(45, 45, 45);
     --about: rgb(248, 248, 248);
@@ -156,6 +156,7 @@ nav #check, nav label{
 .page {
     width: 100%;
     height: 100vh;
+    padding-top: 70px;
 }
 
 .page1 {background-color: red;}
@@ -163,3 +164,24 @@ nav #check, nav label{
 .page3 {background-color: green;}
 .page4 {background-color: yellow;}
 .page5 {background-color: coral;}
+
+/* Top Button */
+.top {
+    background-color: var(--sub);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.top a {
+    padding: 10px 15px;
+}
+
+.top a .fa-angle-up {
+    font-size: 40px;
+    font-weight: bold;
+}
