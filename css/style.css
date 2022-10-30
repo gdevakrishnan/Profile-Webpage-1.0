@@ -13,9 +13,10 @@
     --main: rgb(34, 34, 34);
     --sub: rgb(100, 149, 237);
     --font: rgb(255, 255, 255);
+    --font-black: rgb(71, 71, 71);
     --low-font: rgb(187, 187, 187);
     --border: rgb(45, 45, 45);
-    --about: rgb(248, 248, 248);
+    --about: rgb(197, 195, 195);
     --footer: rgb(20, 20, 20);
     --link: rgb(255, 0, 186);
 }
@@ -160,8 +161,6 @@ nav #check, nav label{
     padding-top: 70px;
 }
 
-.page1 {background-color: red;}
-.page2 {background-color: blue;}
 .page3 {background-color: green;}
 .page4 {background-color: yellow;}
 .page5 {background-color: coral;}
