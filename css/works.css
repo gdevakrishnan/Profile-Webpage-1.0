@@ -1,0 +1,58 @@
+.page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-height: 100vh;
+}
+
+.page3 .title {
+    font-size: 35px;
+    color: var(--font-black);
+    margin: 20px 0px 10px;
+}
+
+.page3 .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 20px;
+}
+
+.page3 .cards .card {
+    width: 300px;
+    height: 250px;
+    margin: 20px 30px;
+    position: relative;
+    background-color: var(--main);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.page3 .cards .card .title {
+    color: var(--sub);
+}
+
+.page3 .cards .card .pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.page3 .cards .card .pic .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.page3 .cards .card:hover .pic .img {
+    display: none;
+}
