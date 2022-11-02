@@ -45,6 +45,7 @@
     position: absolute;
     border-radius: 10px;
     overflow: hidden;
+    transition: all 1s ease-in-out;
 }
 
 .page3 .cards .card .pic .img {
@@ -54,6 +55,6 @@
     border-radius: 10px;
 }
 
-.page3 .cards .card:hover .pic .img {
-    display: none;
+.page3 .cards .card:hover .pic {
+    height: 0px;
 }
