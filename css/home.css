@@ -1,7 +1,7 @@
 /* Home Page CSS */
 .page1 {
   background: linear-gradient(rgb(0, 0, 0, 0.6), rgb(0, 0, 0, 0.7)),
-    url('/images/home-horizontal.jpeg');
+    url('../images/home-horizontal.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,7 +64,7 @@
 @media screen and (max-width: 750px) {
   .page1 {
     background: linear-gradient(rgb(0, 0, 0, 0.2), rgb(0, 0, 0, 0.7)),
-      url(/images/home-vertical.jpeg);
+      url('../images/home-vertical.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
