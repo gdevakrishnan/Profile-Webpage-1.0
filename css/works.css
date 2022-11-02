@@ -57,4 +57,5 @@
 
 .page3 .cards .card:hover .pic {
     height: 0px;
+    width: 0px;
 }
