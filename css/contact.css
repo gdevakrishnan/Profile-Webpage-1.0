@@ -61,6 +61,7 @@
 .page5 .contact .contact-left .content .links .social {
     width: 100%;
     height: 60px;
+    display: flex;
 }
 
 .page5 .contact .contact-left .content .links .fa {
@@ -68,10 +69,12 @@
     background-color: var(--main);
     font-size: 30px;
     line-height: 60px;
-    padding: 0px 20px;
     width: 15%;
     text-align: center;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .page5 .contact .contact-left .content .links .social a {
@@ -80,9 +83,56 @@
     font-weight: bold;
     margin-left: 20px;
     letter-spacing: 1.5px;
+    line-height: 60px;
 }
 
-.page5 .contact .contact-right {background-color: blue;}
+.page5 .contact .contact-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+}
+
+.page5 .contact .contact-right form {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.page5 .contact .contact-right form input[type="text"], .page5 .contact .contact-right form input[type="email"] {
+    margin-bottom: 30px;
+    height: 50px;
+}
+
+.page5 .contact .contact-right form input[type="text"], .page5 .contact .contact-right form input[type="email"] , .page5 .contact .contact-right form textarea {
+    font-size: 22px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+}
+
+.page5 .contact .contact-right form textarea {
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.page5 .contact .contact-right form input[type="submit"] {
+    font-size: 22px;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: var(--main);
+    background-color: var(--sub);
+}
+
+.page5 .contact .contact-right form input[type="submit"]:hover {
+    background-color: var(--main);
+    color: var(--sub);
+}
 
 @media screen and (max-width: 1300px) {
     .page5 .contact {
