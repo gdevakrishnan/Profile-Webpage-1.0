@@ -1,0 +1,96 @@
+.page5 {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+.page5 .contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.page5 .contact .contact-left, .page5 .contact .contact-right {
+    width: 50%;
+    height: calc(100vh - 70px);
+}
+
+.page5 .contact .contact-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+}
+
+.page5 .contact .contact-left .content {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.page5 .contact .contact-left .content .title {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: var(--sub);
+}
+
+.page5 .contact .contact-left .content .blog {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 25px;
+    font-size: 18px;
+    color: var(--font);
+    letter-spacing: 1px;
+}
+
+.page5 .contact .contact-left .content .links {
+    width: 100%;
+    height: 300px;
+    background-color: var(--about);
+    padding: 20px 20px 20px 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.page5 .contact .contact-left .content .links .social {
+    width: 100%;
+    height: 60px;
+}
+
+.page5 .contact .contact-left .content .links .fa {
+    color: var(--sub);
+    background-color: var(--main);
+    font-size: 30px;
+    line-height: 60px;
+    padding: 0px 20px;
+    width: 15%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.page5 .contact .contact-left .content .links .social a {
+    color: var(--main);
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    letter-spacing: 1.5px;
+}
+
+.page5 .contact .contact-right {background-color: blue;}
+
+@media screen and (max-width: 1300px) {
+    .page5 .contact {
+        flex-direction: column;
+    }
+    
+    .page5 .contact .contact-left, .page5 .contact .contact-right {
+        width: 100%;
+        height: calc(100vh - 70px);
+    }
+}
