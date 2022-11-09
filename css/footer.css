@@ -1,0 +1,32 @@
+/* Footer */
+.footer {
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--credits);
+}
+
+.footer .copyright {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.footer .copyright .company {
+    color: var(--sub);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px) {
+    .footer .copyright {
+        line-height: 40px;
+        width: 80%;
+    }
+    
+    .footer .copyright .company {
+        display: block;
+    }
+}
